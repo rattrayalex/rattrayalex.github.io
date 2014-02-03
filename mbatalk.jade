@@ -1,0 +1,178 @@
+doctype html
+html
+  head
+    meta(name='description'
+      content="Alex giving a talk to people.")
+    meta(name='author'
+      content="Alex Rattray")
+    link(rel='stylesheet'
+      href='css/reveal.min.css')
+    link(rel='stylesheet'
+      href='css/theme/default.css'
+      id='theme')
+    // syntax highlighting
+    link(rel='stylesheet'
+      href='css/theme/zenburn.css')
+    // If the query includes 'print-pdf', use the PDF print sheet
+    script.
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    style.
+      .text-left {
+        text-align: left;
+      }
+      .pull-right {
+        float: right;
+      }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+        font-family: "Helvetica Neue", Helvetica, "Sans Serif";
+        font-weight: bold;
+        text-transform: none;
+      }
+
+  body
+    .reveal
+      .slides
+        section
+          h1 How to build a Website
+          h3 For Whartonites
+          p by Alex Rattray, W'14
+          p for eClub
+          p 2014-02-03
+
+        section
+          h1 Intro
+          p Founder, lead dev @ &nbsp;
+            a(href="http://emeraldexam.com") Emerald Exam
+          p Didn't know how to code 3 years ago.
+          br
+          p Tech I use:
+            ul
+              li Python/Django
+              li HTML5/CSS/JS (Jade/less/CoffeScript)
+              li Wordpress, Weebly
+          br
+          p: small More about me: &nbsp;
+            a(href="http://alexrattray.com") alexrattray.com
+
+        section
+          h1 DIY MVP
+          div.text-left
+            h3 Basic Informational
+            p
+              b Wordpress,
+              |  Weebly, Squarespace
+              span.pull-right For maintanability, simplicity, "science".
+            hr
+            h3 Weebly
+            p
+              b Rails,
+              |  Sinatra
+              span.pull-right For development speed, magic.
+            hr
+            h3 Shopify
+            p Node, Meteor
+              span.pull-right For realtime hipsters. See also: Go
+            hr
+            p
+              b Outdated:
+              span.pull-right .NET, PHP, Java?
+        section
+          section
+            h1 Tech
+            h2 you need to know about
+            h2 when you're "hiring"
+          section
+            h1 What's a Webapp?
+            p: br
+            h3 MVC
+            p Model - View - Controller
+            p (Data - Display - URLs)
+            p: br
+            p We're moving to a new model
+          section
+            h1 Backend
+            div.text-left
+              h3 Python:
+              p
+                b Django,
+                |  Flask
+                span.pull-right For maintanability, simplicity, "science".
+              hr
+              h3 Ruby
+              p
+                b Rails,
+                |  Sinatra
+                span.pull-right For development speed, magic.
+              hr
+              h3 Javascript
+              p Node, Meteor
+                span.pull-right For realtime hipsters. See also: Go
+              hr
+              p
+                b Outdated:
+                span.pull-right .NET, PHP, Java?
+          section
+            h1 Frontend
+            p (It's a lot messier here)
+            p: br
+            p Angular.js  ==  Ember.js  ==  React.js  +  Backbone.js
+            p: br
+            p All are good, pretty new/popular.
+        section
+          h1 Servers
+          div.text-left
+            h3 Apps
+            p
+              b AWS EC2 Elastic Beanstalk,
+              |  Heroku, AppEngine, Docker
+              span.pull-right Just use AWS.
+            hr
+            h3 Wordpress et al
+            p
+              b DigitalOcean,
+              |  Dreamhost, Rackspace
+              span.pull-right Just use DO.
+            hr
+            h3 Domains
+            p NameCheap
+              span.pull-right The only one I see recommended
+            hr
+            p
+              b Shitty:
+              span.pull-right GoDaddy, 1and1
+
+            //- div.text-left
+
+
+
+    .js
+      script(src='js/head.min.js')
+      script(src='js/reveal.min.js')
+      script.
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+            //- { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            //- { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            //- { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            //- { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            //- { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            //- { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+
