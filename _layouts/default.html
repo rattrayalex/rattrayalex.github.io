@@ -1,31 +1,212 @@
 ---
-title: 'This is my Site Title'
+title: 'Alex Rattray'
 ---
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site Title {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+  <title>{{ page.title }}</title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
-  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
-  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|EB+Garamond" rel="stylesheet" type="text/css"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <style>
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'EB Garamond', Georgia, 'Times New Roman', Serif;
+      color: #484848;
+    }
+    p, span, li, ol, ul, a {
+      font-family: Georgia, 'Times New Roman', Serif;
+    }
+    .page {
+      margin: auto;
+      max-width: 680px;
+      background: rgba(252, 244, 220, 0.11);
+    }
+    /*@media (min-width: 768px) {*/
+      .page {
+        max-width: 850px;
+        box-shadow: 0 0 6px rgba(0,0,0,.1);
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    /*}*/
+    body {
+      background: #F6F5DB;
+      background: rgba(252, 244, 220, 0.11);
+      color: #484848;
+      color: rgba(104, 100, 90, 0.91);
+    }
+    li {
+      margin-bottom: 1em;
+    }
+    .btn-default {
+      background: transparent;
+    }
+    .btn-nav-topleft {
+      font-family: monospace;
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      background: #484848;
+      background: rgba(104, 100, 90, 0.91);
+      color: white;
+      border-radius: 50%;
+      z-index: 1000;
+      height: 50px;
+      width: 50px;
+      /*box-shadow: 0 0 6px rgba(0,0,0,.1);*/
+      border-color: #484848;
+    }
+    .btn-nav-topleft:focus {
+      background: rgba(104, 100, 90, 0.91);
+      color: white;
+      outline: none;
+    }
+    .btn-nav-topleft:hover {
+      border-color: #484848;
+      /*background: transparent;*/
+      background: rgba(252, 244, 220, 1);
+      color: #484848;
+      /*border-color: #484848;*/
+      /*box-shadow: 0px 0px 3px 0px #ccc;*/
+      box-shadow: 0 0 6px rgba(0,0,0,.1);
+
+    }
+
+  </style>
+  <style>
+    .row-offcanvas {
+      position: relative;
+    }
+
+    .row-offcanvas, .btn-nav-topleft {
+      -webkit-transition: left .25s ease-out;
+           -o-transition: left .25s ease-out;
+              transition: left .25s ease-out;
+    }
+
+    .row-offcanvas.active .btn-nav-topleft {
+      left: 50%;
+    }
+
+    .row-offcanvas-right {
+      right: 0;
+    }
+
+    .row-offcanvas-left {
+      left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+      right: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-right.active {
+      right: 50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left.active {
+      left: 50%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 50%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+      display: none;
+    }
+    .row-offcanvas.active .sidebar-offcanvas {
+      display: block;
+    }
+  </style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27324389-1', 'alexrattray.com');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
+
+
+
   <div class='container'>
-    <div class='col12 clearfix'>
-      <div class='header col6 margin3 pad4h'>
-        <div class='clearfix col12'>
-          <div class='menu fr'>
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a>
-            <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
-            <a href='//github.com/prose/starter'>Fork on GitHub</a>
-          </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
+
+    <div class="row row-offcanvas row-offcanvas-left">
+
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="btn btn-default btn-nav-topleft"
+          data-toggle="offcanvas">
+          &bull;&bull;&bull;
+          <!-- <span class="glyphicon glyphicon-th-list"></span> -->
+        </button>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <h3 class="page-header">Pages</h3>
+          <ul>
+            <li><a href="/mbatalk.html">An MBA Talk</a></li>
+          </ul>
+        <h3 class="page-header">Posts</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
+          <a href="#" class="list-group-item">Link</a>
         </div>
       </div>
-    </div>
-    {{content}}
+
+      <div class="col-xs-12">
+        <div class="container page">
+          {{content}}
+        </div>
+      </div>
+
+    <br>
+    <div style='height:100px;'></div>
   </div>
-  <script src='{{site.baseurl}}/site.js'></script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script>
+    window.jQuery || document.write('<script type="text/javascript" src="/js/jquery.min.js"><\\/script>')
+  </script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+      });
+    });
+  </script>
 </body>
