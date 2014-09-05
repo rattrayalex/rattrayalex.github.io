@@ -57,8 +57,7 @@ permalink: /
   building 
   <a href="http://coursegrapher.com">several</a> 
   <a href="http://histography.com">award-winning</a> 
-  <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon</a> 
-  <a href="http://popcorn-portal.com">projects</a>
+  <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon projects</a>
   and other apps.
 </p>
 <p class="lead">
