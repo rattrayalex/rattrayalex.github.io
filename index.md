@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Alex Rattray, Now On The Internet!
+title: "Alex Rattray, Now On The Internet!"
 permalink: /
 ---
 
@@ -13,7 +13,10 @@ permalink: /
     <img
       style="max-height: 300px;"
       class="img-thumbnail"
-      src="/images/alex_drf.jpg">
+      src="/images/alex.jpg">
+    <div class="visible-xs">
+        <br>
+    </div>
   </div>
 
   <div class="col-sm-8">
@@ -51,7 +54,12 @@ permalink: /
   I created skincare products made from simple ingredients and
   cofounded <a href="http://penncycle.org">a bike share</a>
   before learning to code and
-  building several award-winning hackathon projects and other apps.
+  building 
+  <a href="http://coursegrapher.com">several</a> 
+  <a href="http://histography.com">award-winning</a> 
+  <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon</a> 
+  <a href="http://popcorn-portal.com">projects</a>
+  and other apps.
 </p>
 <p class="lead">
   Most recently, I cofounded
