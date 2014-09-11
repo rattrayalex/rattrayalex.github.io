@@ -61,7 +61,7 @@ permalink: /
   and other apps.
 </p>
 <p class="lead">
-  Most recently, I cofounded
+  Most recently, I co-founded
   <a href="http://emeraldexam.com">Emerald Exam</a>,
   an education technology product used by thousands of students at
   over a dozen institutions to improve the exam experience.
