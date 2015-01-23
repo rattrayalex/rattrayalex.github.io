@@ -1,0 +1,179 @@
+doctype html
+html
+  head
+    meta(name='description'
+      content="Alex giving a talk to people.")
+    meta(name='author'
+      content="Alex Rattray")
+    link(rel='stylesheet'
+      href='css/reveal.min.css')
+    link(rel='stylesheet'
+      href='css/theme/default.css'
+      id='theme')
+    // syntax highlighting
+    link(rel='stylesheet'
+      href='css/theme/zenburn.css')
+    link(rel='stylesheet'
+      href='css/highlight/default.min.css')
+    // If the query includes 'print-pdf', use the PDF print sheet
+    script.
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    style.
+      .text-left {
+        text-align: left;
+      }
+      .pull-right {
+        float: right;
+      }
+      .reveal pre code {
+        padding: 10px 20px;
+      }
+  body
+    .reveal
+      .slides
+        section
+          h1 How to Frontend
+          h3 using Backbone
+          p by
+            a(href='http://alexrattray.com') Alex Rattray
+          p for Jaaga, 2015-01-23
+
+        section
+          h2 Ajax, SPA's, and YOU!
+          h3 Then:
+          ul
+            li We used to have full page reloads
+            li Rendering HTML is a big part of server slowness
+          h3 Now:
+          ul
+            li CDN's are fast & free!
+            li Full reloads -> Ajax
+            li Any reloads -> SPA
+          h3 Future:
+          ul
+            li Isomorphic Templates (with Caching)
+        section
+          h2 The Tasks
+          p Usually, we are doing a few things on the frontend:
+          ul
+            li Templating
+            li Interactivity (animations, more templating)
+            li Getting & Fetching Data
+        section
+          section
+            h2 The Technologies
+            ul
+              li Vanilla JS
+                em  (bleh!)
+              li jQuery
+                em  (pretty manual; spaghetti)
+              li Backbone
+                em  (some structure, all the basics)
+              li Ember
+                em  (
+                  strong lots
+                  |  of structure)
+              li Angular
+                em  (confundingly archaic magic)
+              li React
+                em  (templating & interactivity only)
+            div
+              br
+            h4 &#x25BE; Examples below... &#x25BE;
+
+          section
+            h2 Vanilla JavaScript
+            pre: code.javascript.
+              var r = new XMLHttpRequest();
+              r.open("POST", "people/", true);
+              r.onreadystatechange = function () {
+                if (r.readyState != 4 || r.status != 200) return;
+                document.querySelector('.person').innerHTML = r.responseText
+              };
+              r.send("name=Freeman");
+          section
+            h2 jQuery
+            pre: code.javascript.
+              $.ajax({
+                type: 'POST',
+                url: "people/",
+                data: {name: "Freeman"},
+                success: function (data) {
+                  $('.person').html(data);
+                },
+              });
+          section
+            h2 Backbone (Model)
+            pre: code.javascript.
+              var Person = Backbone.Model.extends({
+                baseUrl: '/people',
+              });
+              var freeman = new Person({name: "Freeman"});
+              freeman.save();
+          section
+            h2 Backbone (View)
+            pre: code.javascript.
+              var PersonView = Backbone.View.extend({
+                initialize: function() {
+                  this.listenTo(this.model, "change", this.render)
+                },
+                template: _.template('Say hello to <%= person.get("name") %>!')
+                render: function() {
+                  var rendered_html = this.template({person: this.model});
+                  this.$el.html(rendered_html);
+                  return this;
+                }
+              });
+              var freemanView = new PersonView({
+                model: freeman,
+                el: '.person'
+              });
+          section
+            h2 React (View)
+            pre: code.javascript.
+              PersonView = React.createClass({
+                render: function(){
+                  return React.DOM.div({},
+                    "Say hello to "+
+                    this.props.person.get('name')
+                  )
+                }
+              });
+
+              React.render(
+                React.createFactory(PersonView)({person: freeman}),
+                document.querySelector('.person')
+              )
+
+    .js
+      script(src='js/head.min.js')
+      script(src='js/reveal.min.js')
+      script.
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme || "serif", // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+            //- { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            //- { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            //- { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'js/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            //- { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            //- { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+
+

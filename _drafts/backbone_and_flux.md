@@ -1,13 +1,14 @@
-# Flux + Backbone = Fluxbone
-## A practical introduction to using Backbone for Flux Stores
-
+---
+title: FluxBone
+tagline: A practical introduction to using Backbone for Flux Stores
+layout: blog
 ---
 
 I've been following the progress of Flux, and [debates](https://news.ycombinator.com/item?id=8248536) surrounding its utility, with some interest. I found a lot of the original descriptions to be confusing if not merely incomplete. Having read (and re-read, and re-read) the [architecture overview](http://facebook.github.io/react/blog/2014/05/06/flux.html) and a [few](https://github.com/facebook/flux/blob/master/src/Dispatcher.js) [examples](https://github.com/facebook/flux/blob/master/examples/flux-chat/js/stores/MessageStore.js), I still just wasn't sure  what Flux was all about, and what advantages it held over Backbone models. 
 
 As it turns out, I think Flux and Backbone play wonderfully together. Or rather, part of Backbone does a great job serving as part of Flux.
 
-### A quick overview of Backbone, and it's shortcomings
+### A quick overview of Backbone, and its shortcomings
 
 I started my journey* by using React with Backbone's Models and Collections, without a Flux architecture. 
 

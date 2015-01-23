@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta name="description" content="Alex giving a talk to people."><meta name="author" content="Alex Rattray"><link rel="stylesheet" href="css/reveal.min.css"><link rel="stylesheet" href="css/theme/default.css" id="theme"><!-- syntax highlighting--><link rel="stylesheet" href="css/theme/zenburn.css"><link rel="stylesheet" href="css/highlight/default.min.css"><!-- If the query includes 'print-pdf', use the PDF print sheet--><script>document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><style>.text-left {
+  text-align: left;
+}
+.pull-right {
+  float: right;
+}
+.reveal pre code {
+  padding: 10px 20px;
+}</style></head><body><div class="reveal"><div class="slides"><section><h1>How to Frontend</h1><h3>using Backbone</h3><p>by<a href="http://alexrattray.com">Alex Rattray</a></p><p>for Jaaga, 2015-01-23</p></section><section><h2>Ajax, SPA's, and YOU!</h2><h3>Then:</h3><ul><li>We used to have full page reloads</li><li>Rendering HTML is a big part of server slowness</li></ul><h3>Now:</h3><ul><li>CDN's are fast & free!</li><li>Full reloads -> Ajax</li><li>Any reloads -> SPA</li></ul><h3>Future:</h3><ul><li>Isomorphic Templates (with Caching)</li></ul></section><section><h2>The Tasks</h2><p>Usually, we are doing a few things on the frontend:</p><ul><li>Templating</li><li>Interactivity (animations, more templating)</li><li>Getting & Fetching Data</li></ul></section><section><section><h2>The Technologies</h2><ul><li>Vanilla JS<em> (bleh!)</em></li><li>jQuery<em> (pretty manual; spaghetti)</em></li><li>Backbone<em> (some structure, all the basics)</em></li><li>Ember<em> (<strong>lots</strong> of structure)</em></li><li>Angular<em> (confundingly archaic magic)</em></li><li>React<em> (templating & interactivity only)</em></li></ul><div><br></div><h4>&#x25BE; Examples below... &#x25BE;</h4></section><section><h2>Vanilla JavaScript</h2><pre><code class="javascript">var r = new XMLHttpRequest();
+r.open("POST", "people/", true);
+r.onreadystatechange = function () {
+  if (r.readyState != 4 || r.status != 200) return;
+  document.querySelector('.person').innerHTML = r.responseText
+};
+r.send("name=Freeman");</code></pre></section><section><h2>jQuery</h2><pre><code class="javascript">$.ajax({
+  type: 'POST',
+  url: "people/",
+  data: {name: "Freeman"},
+  success: function (data) {
+    $('.person').html(data);
+  },
+});</code></pre></section><section><h2>Backbone (Model)</h2><pre><code class="javascript">var Person = Backbone.Model.extends({
+  baseUrl: '/people',
+});
+var freeman = new Person({name: "Freeman"});
+freeman.save();</code></pre></section><section><h2>Backbone (View)</h2><pre><code class="javascript">var PersonView = Backbone.View.extend({
+  initialize: function() {
+    this.listenTo(this.model, "change", this.render)
+  },
+  template: _.template('Say hello to <%= person.get("name") %>!')
+  render: function() {
+    var rendered_html = this.template({person: this.model});
+    this.$el.html(rendered_html);
+    return this;
+  }
+});
+var freemanView = new PersonView({
+  model: freeman,
+  el: '.person'
+});</code></pre></section><section><h2>React (View)</h2><pre><code class="javascript">PersonView = React.createClass({
+  render: function(){
+    return React.DOM.div({},
+      "Say hello to "+
+      this.props.person.get('name')
+    )
+  }
+});
+
+React.render(
+  React.createFactory(PersonView)({person: freeman}),
+  document.querySelector('.person')
+)
+</code></pre></section></section></div></div><div class="js"><script src="js/head.min.js"></script><script src="js/reveal.min.js"></script><script>// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  theme: Reveal.getQueryHash().theme || "serif", // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+  // Parallax scrolling
+  // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+  // parallaxBackgroundSize: '2100px 900px',
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    //- { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    //- { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    //- { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'js/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    //- { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    //- { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></div></body></html>
