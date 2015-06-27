@@ -1,0 +1,180 @@
+doctype html
+html
+  head
+    meta(name='description'
+      content="Intro to Nuclear.js as a Functional Flux implementation. For Flipkart React Meetup 2015-06-27")
+    meta(name='author'
+      content="Alex Rattray")
+    link(rel='stylesheet'
+      href='css/reveal.min.css')
+    link(rel='stylesheet'
+      href='css/theme/default.css'
+      id='theme')
+    // syntax highlighting
+    link(rel='stylesheet'
+      href='css/theme/zenburn.css')
+    link(rel='stylesheet'
+      href='css/highlight/default.min.css')
+    // If the query includes 'print-pdf', use the PDF print sheet
+    script.
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    style.
+      .text-left {
+        text-align: left;
+      }
+      .pull-right {
+        float: right;
+      }
+      .reveal pre code {
+        padding: 10px 20px;
+      }
+  body
+    .reveal
+      .slides
+        section
+          h1 Intro to Nuclear.JS
+          h3 A (more) Functional Flux Implementation
+          p
+            a(href='http://alexrattray.com')  Alex Rattray
+            |  (alex@babajob.com)
+          p
+            | Tech Fellow @
+            a(href='http://babajob.com')  Babajob
+          p for Flipkart React Meetup, 2015-06-27
+
+        section
+          section
+            h2 Who knows what...
+          section
+            h1 React.js
+          section
+            h1 Flux Architecture
+            h2 FB Flux | Reflux | Flummox | Other?
+          section
+            h1 Functional Programming
+            h2 (clojure) $ Haskell . Erlang
+            h2 etc
+          section
+            h1 Immutable.js
+          section
+            h1 FRP
+            h2 Bacon.js / Rx.JS / Kefir
+          section
+            h1  Nuclear.js
+
+        section
+          h2 Imperative/Mutable Stores?
+          pre: code.javascript.
+            var _messages = {};
+            // ...
+            Dispatcher.register(function(payload){
+              //...
+              messages[msg.id] = payload.msg
+              // ^ why is that mutative?
+            })
+
+        section
+          section
+            h2 Pure/Immutable Stores!
+            pre: code.javascript.
+              Nuclear.Store({
+                getInitialState() {
+                  return Immutable.Map({
+                    messages: Immutable.OrderedMap(),
+                  })
+                },
+                initialize() {
+                  this.on('some-action', (currentState, { msg }) => {
+                    return currentState.set(msg.id, msg)
+                  })
+                }
+              })
+          section
+            h2 Pure Functions in Stores
+            pre: code.javascript.
+              (currentState, { msg }) => {
+                return currentState.set(msg.id, msg)
+              }
+
+        section
+          h2 Store Interdependencies?
+          pre: code.javascript.
+            Dispatcher.waitFor([SomeOtherStore])
+            deal_with(payload.some_mutated_attribute)
+
+        section
+          h2 Functional "Getters"
+          h3 A Paradigm Shift
+          pre: code.javascript.
+            let purchasedProducts = [
+              ['currentUser', 'purchased'], // { user: }
+              ['allProducts'], // { allProducts}
+              (purchasedIds, products) => {
+                return products.filter( (val, id) => purchasedIds.contains(id) )
+              }
+            ]
+
+            /* reactor's store state:
+            {
+              user: { name: "Alex", purchased: [123, 987] }
+              allProducts: {
+                123: { name: "Levis Jeans" },
+                987: { name: "Macbook Air" },
+              }
+            }
+            */
+
+        section
+          h2 Example React
+          pre: code.
+            import reactor from './myReactor'
+            import getters from './myGetters'
+
+            React.createClass({
+              mixins: [reactor.ReactMixin],
+              getDataBindings() {
+                return { purchasedProducts: getters.purchasedProducts }
+              },
+              render() {
+                let productList = this.state.purchasedProducts.map( product =>
+                  &lt;li>{ product.name }&lt;/li>
+                )
+                return (
+                  &lt;ul>
+                    { productList }
+                  &lt;/ul>
+                )
+              }
+            })
+    .js
+      script(src='js/head.min.js')
+      script(src='js/reveal.min.js')
+      script.
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme || "serif", // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+            //- { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            //- { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            //- { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'js/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            //- { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            //- { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+
+
