@@ -72,5 +72,11 @@ permalink: /
 </p>
 <p class="lead">
   I am currently taking a year to travel in Asia,
-  doing software consulting as I go.
+  doing software consulting as I go. 
+  This included a three-month post 
+  as Senior Technology Fellow at 
+  Bangalore-based
+  <a href="http://babajob.com">Babajob</a>, 
+  India's largest and fastest-growing jobs site 
+  for blue-collar workers.
 </p>
