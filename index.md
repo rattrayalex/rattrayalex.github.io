@@ -4,26 +4,30 @@ title: "Alex Rattray, Now On The Internet!"
 permalink: /
 ---
 
-<h1 class='page-header'>Hi, I'm Alex Rattray.</h1>
+<h1 class='page-header'>
+  Hi, I'm Alex Rattray.
+</h1>
+
 <div class="row">
 
-  <div 
-    class="col-sm-4"
-    style="text-align:center;">
-    <img
-      style="max-height: 300px;"
-      class="img-thumbnail"
-      src="/images/alex.jpg">
-    <div class="visible-xs">
-        <br>
-    </div>
+  <div class="col-sm-4">
+    <center>
+      <img class="img-thumbnail"
+        style="max-height: 300px;"
+        src="/images/alex.jpg"
+      />
+      <div class="visible-xs">
+        <br />
+      </div>
+    </center>
   </div>
 
   <div class="col-sm-8">
     <p class="lead">
       Entrepeneur, born &amp; raised in Seattle and educated at Wharton (2014).
-    </p><p class="lead">
-      Currently traveling in Asia.
+    </p>
+    <p class="lead">
+      Exploring opportunities after a year of traveling in Asia.
     </p>
     <p>
       You can get in touch with me on
@@ -35,6 +39,7 @@ permalink: /
       <a href="mailto:rattray.alex+.com@gmail.com">rattray.alex@gmail.com</a>.
     </p>
   </div>
+
 </div>
 
 <br>
@@ -64,19 +69,27 @@ permalink: /
   Most recently, I co-founded
   <a href="http://emeraldexam.com">Emerald Exam</a>,
   an education technology product used by thousands of students at
-  over a dozen institutions to improve the exam experience.
+  over a dozen institutions.
   First Round Capital's
   <a href="http://dormroomfund.com">Dorm Room Fund</a>
   invested in the company, which we grew to seven people before closing
   our doors in March of 2014.
 </p>
 <p class="lead">
-  I am currently taking a year to travel in Asia,
-  doing software consulting as I go. 
-  This included a three-month post 
+  After closing Emerald Exam &amp; graduating, 
+  I took a year to travel in Asia,
+  doing remote software consulting.
+  I also took a three-month post 
   as Senior Technology Fellow at 
-  Bangalore-based
-  <a href="http://babajob.com">Babajob</a>, 
-  India's largest and fastest-growing jobs site 
-  for blue-collar workers.
+  Bangalore-based startup
+  <a href="http://babajob.com">Babajob.com</a>, 
+  which connects
+  undereducated job seekers with economic opportunities
+  and is growing at over 20% month-on-month.
 </p>
+<p class="lead">
+  I expect to be available for fulltime work starting September 2015. 
+  I am role agnostic but care a great deal 
+  about company mission, trajectory, &amp; culture. 
+</p>
+
