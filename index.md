@@ -88,8 +88,10 @@ permalink: /
   and is growing at over 20% month-on-month.
 </p>
 <p class="lead">
-  I expect to be available for fulltime work starting September 2015. 
-  I am role agnostic but care a great deal 
-  about company mission, trajectory, &amp; culture. 
+  I expect to be available for fulltime work starting September 2015.
+  I am most interested in growth or product/frontend engineering,
+  but I love wearing multiple hats and am happy to pitch in
+  wherever a company I'm passionate about needs me most.
+  My top criteria are company mission, trajectory, &amp; culture.
 </p>
 
