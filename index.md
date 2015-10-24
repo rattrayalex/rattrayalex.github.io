@@ -24,15 +24,15 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur, born &amp; raised in Seattle and educated at Wharton (2014).
+      Entrepeneur, born &amp; raised in Seattle and educated at Wharton ('14).
     </p>
     <p class="lead">
-      Exploring opportunities after a year of traveling in Asia.
+      Product Engineer at <a href="http://hired.com">Hired</a> in San Francisco.
     </p>
     <p>
       You can get in touch with me on
       <a href="http://facebook.com/rattray.alex">Facebook</a>,
-      <a href="http://www.linkedin.com/pub/alex-rattray/18/938/397">LinkedIn</a>,
+      <a href="http://linkedin.com/in/alexrattray">LinkedIn</a>,
       <a href="http://twitter.com/RattrayAlex">Twitter</a>,
       <a href="skype:rattrayalex" title="rattrayalex">Skype</a>,
       or by email at
@@ -63,35 +63,27 @@ permalink: /
   <a href="http://coursegrapher.com">several</a> 
   <a href="http://histography.com">award-winning</a> 
   <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon projects</a>
-  and other apps.
-</p>
-<p class="lead">
-  Most recently, I co-founded
+  and other apps. I also co-founded
   <a href="http://emeraldexam.com">Emerald Exam</a>,
-  an education technology product used by thousands of students at
-  over a dozen institutions.
+  an education technology product funded by
   First Round Capital's
-  <a href="http://dormroomfund.com">Dorm Room Fund</a>
-  invested in the company, which we grew to seven people before closing
-  our doors in March of 2014.
+  <a href="http://dormroomfund.com">Dorm Room Fund</a>.
 </p>
 <p class="lead">
-  After closing Emerald Exam &amp; graduating, 
+  After closing Emerald Exam &amp; graduating in 2014, 
   I took a year to travel in Asia,
   doing remote software consulting.
-  I also took a three-month post 
-  as Senior Technology Fellow at 
-  Bangalore-based startup
+  I also took a three-month post at
+  Bangalore-based
   <a href="http://babajob.com">Babajob.com</a>, 
-  which connects
-  undereducated job seekers with economic opportunities
-  and is growing at over 20% month-on-month.
+  a 250-person startup
+  which connects undereducated job seekers 
+  with economic opportunities.
 </p>
 <p class="lead">
-  I expect to be available for fulltime work starting September 2015.
-  I am most interested in growth or product/frontend engineering,
-  but I love wearing multiple hats and am happy to pitch in
-  wherever a company I'm passionate about needs me most.
-  My top criteria are company mission, trajectory, &amp; culture.
+  In October 2015, I moved to San Francisco and joined 
+  <a href="http://hired.com">Hired</a>, 
+  where I hope to play a role in improving the labor market
+  for job-seekers and employers.
 </p>
 
