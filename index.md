@@ -63,7 +63,7 @@ permalink: /
   <a href="http://coursegrapher.com">several</a> 
   <a href="http://histography.com">award-winning</a> 
   <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon projects</a>
-  and other apps. I also co-founded
+  and other apps. I also cofounded
   <a href="http://emeraldexam.com">Emerald Exam</a>,
   an education technology product funded by
   First Round Capital's
