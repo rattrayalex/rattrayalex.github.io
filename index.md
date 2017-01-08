@@ -24,10 +24,12 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur, born &amp; raised in Seattle and educated at Wharton ('14).
+      Entrepeneur and Engineer, born &amp; raised in Seattle and educated at Wharton ('14).
     </p>
     <p class="lead">
-      Product Engineer at <a href="http://hired.com">Hired</a> in San Francisco.
+      Currently living in San Francisco and building
+      <a href="http://lightscript.org">LightScript</a>,
+      a programming language that compiles to JavaScript.
     </p>
     <p>
       You can get in touch with me on
@@ -81,9 +83,10 @@ permalink: /
   with economic opportunities.
 </p>
 <p class="lead">
-  In October 2015, I moved to San Francisco and joined 
-  <a href="http://hired.com">Hired</a>, 
-  where I hope to play a role in improving the labor market
+  From October 2015 to January 2017,
+  I worked as a Software Engineer at
+  <a href="http://hired.com">Hired</a> in San Francisco
+  with the goal of improving the labor market
   for job-seekers and employers.
 </p>
 
