@@ -29,7 +29,7 @@ permalink: /
     <p class="lead">
       Currently living in San Francisco and building
       <a href="http://lightscript.org">LightScript</a>,
-      a programming language that compiles to JavaScript.
+      a cleaned-up syntax for JavaScript.
     </p>
     <p>
       You can get in touch with me on
