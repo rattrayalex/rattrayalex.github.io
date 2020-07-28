@@ -1,6 +1,6 @@
 baseurl: /
 permalink: pretty
-markdown: rdiscount
+markdown: GFM
 prose:
   rooturl: '_posts'
   siteurl: 'http://rattrayalex.github.io/'
