@@ -28,8 +28,7 @@ permalink: /
     </p>
     <p class="lead">
       Currently living in New York and building
-      <a href="https://stainlessapi.com">Stainless</a>,
-      a devtool startup.
+      <a href="https://stainlessapi.com">Stainless</a>.
     </p>
     <p>
       You can get in touch with me on
