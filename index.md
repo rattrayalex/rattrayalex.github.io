@@ -14,7 +14,7 @@ permalink: /
     <center>
       <img class="img-thumbnail"
         style="max-height: 300px;"
-        src="/images/alex.jpg"
+        src="/images/alex-3-small.jpeg"
       />
       <div class="visible-xs">
         <br />
@@ -24,19 +24,19 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur and Engineer, born &amp; raised in Seattle and educated at Wharton ('14).
+      Entrepeneur and Engineer.
     </p>
     <p class="lead">
-      Currently living in San Francisco and building
-      <a href="http://lightscript.org">LightScript</a>,
-      a cleaned-up syntax for JavaScript.
+      Currently living in New York and building
+      <a href="https://stainlessapi.com">Stainless</a>,
+      a devtool startup.
     </p>
     <p>
       You can get in touch with me on
-      <a href="http://facebook.com/rattray.alex">Facebook</a>,
       <a href="http://linkedin.com/in/alexrattray">LinkedIn</a>,
       <a href="http://twitter.com/RattrayAlex">Twitter</a>,
-      <a href="skype:rattrayalex" title="rattrayalex">Skype</a>,
+      <!-- <a href="http://facebook.com/rattray.alex">Facebook</a>, -->
+      <!-- <a href="http://instagram.com/rattrayalex">Instagram</a>, -->
       or by email at
       <a href="mailto:rattray.alex+.com@gmail.com">rattray.alex@gmail.com</a>.
     </p>
@@ -46,24 +46,23 @@ permalink: /
 
 <br>
 
+<!--
 <h2 class="page-header">About me:</h2>
-<p class="lead">
+<p>
   I have been "starting things" for almost as long as I can remember.
 </p>
-<p class="lead">
+<p>
   In high school,
   I pitched energy-saving signage to Seattle's electricity utility,
   started an underground student newspaper,
   and even sold custom upcycled bookbags.
 </p>
-<p class="lead">
-  As a student at Penn,
-  I created skincare products made from simple ingredients and
-  cofounded <a href="http://penncycle.org">a bike share</a>
-  before learning to code and
-  building 
-  <a href="http://coursegrapher.com">several</a> 
-  <a href="http://histography.com">award-winning</a> 
+<p>
+  As a student at Penn, I cofounded
+  <a href="http://penncycle.org">a bike share</a>
+  before learning to code and building
+  <a href="http://coursegrapher.com">several</a>
+  <a href="http://histography.com">award-winning</a>
   <a href="pando.com/2013/01/22/meet-musical-toilet-the-latest-innovation-in-the-connected-bathroom/">hackathon projects</a>
   and other apps. I also cofounded
   <a href="http://emeraldexam.com">Emerald Exam</a>,
@@ -71,22 +70,14 @@ permalink: /
   First Round Capital's
   <a href="http://dormroomfund.com">Dorm Room Fund</a>.
 </p>
-<p class="lead">
-  After closing Emerald Exam &amp; graduating in 2014, 
+<p>
+  After school,
   I took a year to travel in Asia,
   doing remote software consulting.
   I also took a three-month post at
   Bangalore-based
-  <a href="http://babajob.com">Babajob.com</a>, 
-  a 250-person startup
-  which connects undereducated job seekers 
+  <a href="http://babajob.com">Babajob.com</a>,
+  a startup connecting undereducated job seekers
   with economic opportunities.
 </p>
-<p class="lead">
-  From October 2015 to January 2017,
-  I worked as a Software Engineer at
-  <a href="http://hired.com">Hired</a> in San Francisco
-  with the goal of improving the labor market
-  for job-seekers and employers.
-</p>
-
+-->
