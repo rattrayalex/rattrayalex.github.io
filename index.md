@@ -26,11 +26,11 @@ permalink: /
     <p class="lead">
       Entrepeneur and Engineer.
     </p>
-    <p class="lead">
+    <p style="font-size:16px;">
       Currently living in New York and building
       <a href="https://stainlessapi.com">Stainless</a>.
     </p>
-    <p>
+    <p style="font-size:16px;">
       You can get in touch with me on
       <a href="http://linkedin.com/in/alexrattray">LinkedIn</a>,
       <a href="http://twitter.com/RattrayAlex">Twitter</a>,
