@@ -24,13 +24,13 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur and Engineer.
+      Entrepeneur and (self-taught) engineer.
     </p>
-    <p style="font-size:16px;">
+    <p>
       Currently living in New York and building
       <a href="https://stainlessapi.com">Stainless</a>.
     </p>
-    <p style="font-size:16px;">
+    <p>
       You can get in touch with me on
       <a href="http://linkedin.com/in/alexrattray">LinkedIn</a>,
       <a href="http://twitter.com/RattrayAlex">Twitter</a>,
@@ -38,6 +38,17 @@ permalink: /
       <!-- <a href="http://instagram.com/rattrayalex">Instagram</a>, -->
       or by email at
       <a href="mailto:rattray.alex+.com@gmail.com">rattray.alex@gmail.com</a>.
+    </p>
+    <hr>
+    <h2>About</h2>
+    <p>
+      I've been starting things for as long as I can remember.
+    </p>
+    <p>
+      In the past, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a>,
+      a campus bikeshare, an underground student newspaper, a patent-pending code generation system,
+      a pretty intense <a href="https://narwallmask.com">COVID mask</a>,
+      and a dozen-odd other projects and businesses.
     </p>
   </div>
 
