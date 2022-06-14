@@ -24,7 +24,7 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur and self-taught engineer.
+      Entrepeneur and engineer.
     </p>
     <p>
       Currently living in New York and building
@@ -40,18 +40,20 @@ permalink: /
       <a href="mailto:rattray.alex+.com@gmail.com">rattray.alex@gmail.com</a>.
     </p>
     <br>
-    <h2>About</h2>
+    <p class="lead">About</p>
     <p>
       I've been starting things for as long as I can remember.
     </p>
     <p>
       In the past, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a>,
       a campus bikeshare, an underground student newspaper,
-      a pretty intense <a href="https://narwallmask.com" target="_blank">COVID mask</a>,
+      a <a href="https://narwallmask.com" target="_blank">pretty intense COVID mask</a>,
       and a dozen-odd other projects and businesses.
     </p>
     <p>
-      From 2017-2020, I worked at Stripe, where I:<br>
+      From 2017-2020, I worked at Stripe, where I:
+    </p>
+    <p>
       - Shipped a <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">redesign</a> of Stripe's API Docs.<br>
       - Shipped the Stripe API's <a href="https://twitter.com/stripe/status/1222944951853432832" target="_blank">TypeScript definitions</a>.<br>
       - Designed the patent-pending codegen system that powers Stripe's API client libraries and docs.<br>
@@ -62,6 +64,10 @@ permalink: /
       I've also contributed to <a href="https://prettier.io" target="_blank">prettier</a>, including the
       <a href="https://github.com/prettier/prettier/pulls/1129" target="_blank">no-semi</a> option and
       <a href="https://github.com/prettier/prettier/pulls?q=author%3Arattrayalex+JSX" target="_blank">much of the JSX behavior</a>.
+    </p>
+    <p>
+      I graduated from the University of Pennsylvania in 2014 with a degree in business
+      and a long list of friends and hackathons to thank for teaching me to code.
     </p>
   </div>
 
