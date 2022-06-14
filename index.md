@@ -24,7 +24,7 @@ permalink: /
 
   <div class="col-sm-8">
     <p class="lead">
-      Entrepeneur and (self-taught) engineer.
+      Entrepeneur and self-taught engineer.
     </p>
     <p>
       Currently living in New York and building
@@ -39,7 +39,7 @@ permalink: /
       or by email at
       <a href="mailto:rattray.alex+.com@gmail.com">rattray.alex@gmail.com</a>.
     </p>
-    <hr>
+    <br>
     <h2>About</h2>
     <p>
       I've been starting things for as long as I can remember.
