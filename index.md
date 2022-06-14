@@ -52,16 +52,16 @@ permalink: /
     </p>
     <p>
       From 2017-2020, I worked at Stripe, where I:<br>
-      - Shipped a <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">redesign</a> of Stripe's API Docs<br>
-      - Shipped the Stripe API's <a href="https://twitter.com/stripe/status/1222944951853432832developer">TypeScript definitions</a><br>
-      - Designed patent-pending codegen system that powers the API client libraries<br>
-      - Served as Incident PM, including for one of Stripe's most severe degradations<br>
-      - Served as an engineer-in-residence on the in-house VC and M&A team<br>
+      - Shipped a <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">redesign</a> of Stripe's API Docs.<br>
+      - Shipped the Stripe API's <a href="https://twitter.com/stripe/status/1222944951853432832" target="_blank">TypeScript definitions</a>.<br>
+      - Designed the patent-pending codegen system that powers Stripe's API client libraries and docs.<br>
+      - Led incident response for one of Stripe's most severe degradations.<br>
+      - Helped with venture investing and M&A as an engineer-in-residence on the corpdev team.<br>
     </p>
     <p>
-      I've also contributed to <a href="https://prettier.io">prettier</a>, including the
-      <a href="https://github.com/prettier/prettier/pulls/1129">no-semi</a> option and
-      <a href="https://github.com/prettier/prettier/pulls?q=author%3Arattrayalex+JSX">much of the JSX behavior</a>.
+      I've also contributed to <a href="https://prettier.io" target="_blank">prettier</a>, including the
+      <a href="https://github.com/prettier/prettier/pulls/1129" target="_blank">no-semi</a> option and
+      <a href="https://github.com/prettier/prettier/pulls?q=author%3Arattrayalex+JSX" target="_blank">much of the JSX behavior</a>.
     </p>
   </div>
 
