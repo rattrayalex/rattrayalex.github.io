@@ -46,9 +46,22 @@ permalink: /
     </p>
     <p>
       In the past, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a>,
-      a campus bikeshare, an underground student newspaper, a patent-pending code generation system,
-      a pretty intense <a href="https://narwallmask.com">COVID mask</a>,
+      a campus bikeshare, an underground student newspaper,
+      a pretty intense <a href="https://narwallmask.com" target="_blank">COVID mask</a>,
       and a dozen-odd other projects and businesses.
+    </p>
+    <p>
+      From 2017-2020, I worked at Stripe, where I:<br>
+      - Shipped a <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">redesign</a> of Stripe's API Docs<br>
+      - Shipped the Stripe API's <a href="https://twitter.com/stripe/status/1222944951853432832developer">TypeScript definitions</a><br>
+      - Designed patent-pending codegen system that powers the API client libraries<br>
+      - Served as Incident PM, including for one of Stripe's most severe degradations<br>
+      - Served as an engineer-in-residence on the in-house VC and M&A team<br>
+    </p>
+    <p>
+      I've also contributed to <a href="https://prettier.io">prettier</a>, including the
+      <a href="https://github.com/prettier/prettier/pulls/1129">no-semi</a> option and
+      <a href="https://github.com/prettier/prettier/pulls?q=author%3Arattrayalex+JSX">much of the JSX behavior</a>.
     </p>
   </div>
 
