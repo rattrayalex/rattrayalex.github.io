@@ -45,20 +45,15 @@ permalink: /
       I've been starting things for as long as I can remember.
     </p>
     <p>
-      In the past, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a>,
-      a campus bikeshare, an underground student newspaper,
-      a <a href="https://narwallmask.com" target="_blank">pretty intense COVID mask</a>,
-      and a dozen-odd other projects and businesses.
+      For example, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a> and
+      a <a href="https://narwallmask.com" target="_blank">pretty intense COVID mask</a>.
+      I also started a campus bikeshare at UPenn, an underground student newspaper in high school,
+      and about a dozen-odd other small projects and businesses.
     </p>
     <p>
-      From 2017-2020, I worked at Stripe, where I:
-    </p>
-    <p>
-      - Shipped a <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">redesign</a> of Stripe's API Docs.<br>
-      - Shipped the Stripe API's <a href="https://twitter.com/stripe/status/1222944951853432832" target="_blank">TypeScript definitions</a>.<br>
-      - Designed the patent-pending codegen system that powers Stripe's API client libraries and docs.<br>
-      - Led incident response for one of Stripe's most severe degradations.<br>
-      - Helped with venture investing and M&A as an engineer-in-residence on the corpdev team.<br>
+      From 2017-2020, I <a href="https://www.linkedin.com/in/alexrattray/details/experience/">worked at Stripe</a> on a
+      <a href="https://twitter.com/stripe/status/1108764635606315008" target="_blank">variety</a> of
+      <a href="https://twitter.com/stripe/status/1222944951853432832" target="_blank">projects</a>, mostly in developer tools.
     </p>
     <p>
       I've also contributed to <a href="https://prettier.io" target="_blank">prettier</a>, including the
