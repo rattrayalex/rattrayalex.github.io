@@ -47,7 +47,7 @@ permalink: /
     <p>
       For example, I’ve built a <a href="http://lightscript.org" target="_blank">programming language</a> and
       a <a href="https://narwallmask.com" target="_blank">pretty intense COVID mask</a>.
-      I also started a campus bikeshare at UPenn, an underground student newspaper in high school,
+      I also started a campus bikeshare at UPenn, an underground newspaper in high school,
       and about a dozen-odd other small projects and businesses.
     </p>
     <p>
